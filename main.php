@@ -15,6 +15,8 @@ echo "
     <inpunt type='text' name='palabra1'>
     <inpunt type='text' name='palabra2'>
     <inpunt type='text' name='palabra3'>
+    <button type='submit'> Enviar </button>
+</from>
 ";
 
 ?>
