@@ -6,6 +6,9 @@ $palabrasDesordenadas = array();
 for ($i = 0; $i < 3; $i++) {
     $palabrasDesordenadas[$i] = str_shuffle($palabras[$i]);
 }
+
+print_r($palabrasDesordenadas);
+
 echo "
 <from>
     <inpunt type='text' name='palabra0'>
