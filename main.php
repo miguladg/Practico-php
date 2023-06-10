@@ -10,7 +10,7 @@ for ($i = 0; $i < 3; $i++) {
 print_r($palabrasDesordenadas);
 
 echo "
-<from>
+<from action='analisis.php'>
     <inpunt type='text' name='palabra0'>
     <inpunt type='text' name='palabra1'>
     <inpunt type='text' name='palabra2'>
