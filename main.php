@@ -1,22 +1,22 @@
 <?php
 
-$nivel1Ordenado = array("Sol", "Dia", "Hola", "Alma", "Miel");
-$nivel1Desordenado = array();
+$palabras = array("sol", "luna", "cielo");
+$palabrasDesordenadas = array();
 
-$formulario = "<form action='validar.php'>";
-$cajaDeTexto = "";
-//Desordenar las palabras
-for ($i=0; $i < count($nivel1Ordenado); $i++) { 
-    $nivel1Desordenado[$i] = str_shuffle($nivel1Ordenado[$i]);
-    $cajaDeTexto .=  "<label>Escribe el valor de la posicion ".$i."</label>
-    <input type='text' name='valorPosicion".$i."'><br>";
+for ($i = 0; $i < 3; $i++) {
+    $palabrasDesordenadas[$i] = str_shuffle($palabras[$i]);
 }
-$botonEnviar = "<button type='submit'>Enviar</button>";
-$finalFormulario = "</form>";
 
-print_r($nivel1Desordenado);
-echo $formulario.$cajaDeTexto.$botonEnviar.$finalFormulario;
+print_r($palabrasDesordenadas);
 
-
+echo "
+<from>
+    <inpunt type='text' name='palabra0'>
+    <inpunt type='text' name='palabra1'>
+    <inpunt type='text' name='palabra2'>
+    <inpunt type='text' name='palabra3'>
+    <button type='submit'> Enviar </button>
+</from>
+";
 
 ?>
