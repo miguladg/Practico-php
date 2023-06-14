@@ -20,4 +20,5 @@ if($_REQUEST["palabra2"] == $palabras[2]){
 } else {
     echo "La palabra es incorrecta: ".$palabras[2];
 }
+
 ?>
