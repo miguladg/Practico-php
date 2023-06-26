@@ -2,6 +2,7 @@
 
 $palabras = array("sol", "luna", "cielo", "luz", "estrellas", "lluvia");
 
+print_r($palabras);
 $form = "<form action='analisis.php'>"
 
 for ($i=0; $i < count($palabras); $i++) {
