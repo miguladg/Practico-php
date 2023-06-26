@@ -1,19 +1,22 @@
 <?php
 
-$palabras = array("sol", "luna", "cielo", "luz", "estrellas", "lluvia");
+$nivel1Ordenado = array("Sol", "Dia", "Hola", "Alma", "Miel");
+$nivel1Desordenado = array();
 
-print_r($palabras);
-$form = "<form action='analisis.php'>"
-
-for ($i=0; $i < count($palabras); $i++) {
-    $form .= "La palabra: ".str_shuffle($palabras[$i])." ".
-    "<input type='text' name='palabra".[$i]."'>".
-    "<br>";
+$formulario = "<form action='validar.php'>";
+$cajaDeTexto = "";
+//Desordenar las palabras
+for ($i=0; $i < count($nivel1Ordenado); $i++) { 
+    $nivel1Desordenado[$i] = str_shuffle($nivel1Ordenado[$i]);
+    $cajaDeTexto .=  "<label>Escribe el valor de la posicion ".$i."</label>
+    <input type='text' name='valorPosicion".$i."'><br>";
 }
+$botonEnviar = "<button type='submit'>Enviar</button>";
+$finalFormulario = "</form>";
 
-$button = "<button type='submit'>Enviar</button>";
-$formCierre = "</form>";
+print_r($nivel1Desordenado);
+echo $formulario.$cajaDeTexto.$botonEnviar.$finalFormulario;
 
-echo $form.$button.$formCierre;
-echo $form;
-?>  
+
+
+?>
