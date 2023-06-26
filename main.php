@@ -14,5 +14,5 @@ $button = "<button type='submit'>Enviar</button>";
 $formCierre = "</form>";
 
 echo $form.$button.$formCierre;
-
-?>
+echo $form;
+?>  
